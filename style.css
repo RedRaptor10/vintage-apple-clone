@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset */
+
+body {
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: revert;
+}
+
+i, em {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+}
+
+#navbar-menu {
+    display: flex;
+    background: linear-gradient(rgb(96, 96, 96), rgb(112, 112, 112) 50%, rgb(128, 128, 128) 50%, rgb(144, 144, 144));
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', 'Helvetica', 'Arial', 'Verdana', 'sans-serif';
+    font-size: 12px;
+    border: 1px solid rgb(96, 96, 96);
+    border-radius: 4px;
+}
+
+#navbar-menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+}
+
+#navbar-menu li:not(:last-child) {
+    width: 96px;
+    text-align: center;
+    border-right: 1px solid rgb(96, 96, 96);
+    cursor: pointer;
+}
+
+#navbar-menu li:last-child {
+    width: 138px;
+}
+
+#navbar-menu li:not(:last-child):hover {
+    background: linear-gradient(rgb(64, 64, 64), rgb(80, 80, 80) 50%, rgb(96, 96, 96) 50%, rgb(112, 112, 112));
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 4px 0 4px;
+    border-radius: 8px;
+    box-shadow: inset -2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#search-input {
+    background: none;
+    width: 100%;
+    color: #fff;
+    border: 0;
+}
+
+#search-input:focus {
+    width: 125%;
+}
+
+#apple-icon {
+    width: auto;
+    height: 24px;
+}
+
+#search-icon {
+    width: auto;
+    height: 12px;
+}
+
+/* Header */
+header {
+    background: url("assets/your-verse-hero.jpg") 0 100% no-repeat;
+    background-size: 1440px 1315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 70vh;
+    margin: 0 auto 0 auto;
+    color: #fff;
+}
+
+#header-section {
+    color: rgba(224, 224, 224);
+    text-align: center;
+}
+
+.header-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', 'Helvetica', 'Arial', 'Verdana', 'sans-serif';
+    font-weight: normal;
+}
+
+#title {
+    font-size: 64px;
+}
+
+#subtitle {
+    padding: 24px 0 24px 0;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+#subtitle-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(224, 224, 224);
+}
+
+#subtitle-link a:hover {
+    text-decoration: underline;
+}
+
+#play-icon {
+    margin-left: 12px;
+    width: 24px;
+    height: auto;
+}
+
+/* Main */
+#promos {
+    display: flex;
+    margin: 2px auto 0 auto;
+    max-width: 1440px;
+    width: 1440px;
+    overflow: hidden;
+}
+
+.promo {
+    margin-right: 2px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: rgb(128, 128, 128);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', 'Helvetica', 'Arial', 'Verdana', 'sans-serif';
+    font-size: 10px;
+}
+
+footer a {
+    color: rgb(0, 128, 255);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    height: 50%;
+    margin: 0 36px 0 36px;
+}
+
+#footer-text-2 {
+    margin-top: 12px;
+}
+
+.footer-content ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content ul li:not(:last-child) {
+    padding: 0 8px 0 8px;
+    border-right: 1px solid rgb(192, 192, 192);
+}
+
+#lang-icon {
+    width: 16px;
+    height: auto;
+    margin-left: 8px;
+    cursor: pointer;
+}
